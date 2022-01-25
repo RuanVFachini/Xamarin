@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamarinFormsApp.CalculadoraSimples">
+    <ContentPage.Content>
+        <StackLayout Padding="10">
+            <Label Text="Calculadora Simples" FontSize="Large"/>
+            <Label Text="Valor A:"/>
+            <Entry x:Name="etrValorA" Placeholder="Informe o valor A" Keyboard="Numeric" />
+            <Label Text="Valor B:"/>
+            <Entry x:Name="etrValorB" Placeholder="Informe o valor B" Keyboard="Numeric" />
+            <StackLayout 
+                Orientation="Horizontal" 
+                HorizontalOptions="CenterAndExpand">
+                <Button Text="+" Clicked="Execute"/>
+                <Button Text="-" Clicked="Execute"/>
+                <Button Text="/" Clicked="Execute"/>
+                <Button Text="*" Clicked="Execute"/>
+            </StackLayout>
+            <Label x:Name="lblResult"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

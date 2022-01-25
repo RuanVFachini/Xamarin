@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamarinFormsApp.EnviarEmail"
+             Title="Enviar E-mail">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Programa para envio de email"
+                   HorizontalOptions="Center"
+                   FontSize="Large" />
+
+            <Entry x:Name="etrDestinatario"
+                   Keyboard="Email"
+                   Placeholder="Informe o e-mail do destinatário" />
+
+            <Entry x:Name="etrAssunto"
+                   Placeholder="Assunto" />
+
+            <Editor x:Name="etrCorpo"
+                    AutoSize="TextChanges"
+                    Placeholder="Escreva o email aqui" />
+
+            <Button x:Name="btnEnviar"
+                    Text="Enviar"
+                    Clicked="BtnEnviar_Clicked" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

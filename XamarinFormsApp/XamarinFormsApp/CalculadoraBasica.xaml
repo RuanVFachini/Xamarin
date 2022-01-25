@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:xamarinformsapp="clr-namespace:XamarinFormsApp"
+             x:Class="XamarinFormsApp.CalculadoraBasica">
+    <ContentPage.Content>
+        <Grid 
+            BackgroundColor="DimGray"
+            Padding="6">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <Label 
+                x:Name="lblResult"
+                FontSize="48"
+                FontAttributes="Bold"
+                BackgroundColor="Black"
+                Text="0"
+                TextColor="White"
+                HorizontalTextAlignment="End"
+                VerticalTextAlignment="Center"
+                LineBreakMode="NoWrap"
+                Grid.ColumnSpan="4"
+                Padding="10"/>
+
+            <xamarinformsapp:NumberButton Text="7" Grid.Row="1" Grid.Column="0" Clicked="NumberButton_Clicked"/>
+            <xamarinformsapp:NumberButton Text="8" Grid.Row="1" Grid.Column="1" Clicked="NumberButton_Clicked"/>
+            <xamarinformsapp:NumberButton Text="9" Grid.Row="1" Grid.Column="2" Clicked="NumberButton_Clicked"/>
+            <xamarinformsapp:MathOperationButton Text="/" Grid.Row="1" Grid.Column="3" Clicked="MathOperationButton_Clicked"/>
+
+            <xamarinformsapp:NumberButton Text="4" Grid.Row="2" Grid.Column="0" Clicked="NumberButton_Clicked"/>
+            <xamarinformsapp:NumberButton Text="5" Grid.Row="2" Grid.Column="1" Clicked="NumberButton_Clicked"/>
+            <xamarinformsapp:NumberButton Text="6" Grid.Row="2" Grid.Column="2" Clicked="NumberButton_Clicked"/>
+            <xamarinformsapp:MathOperationButton Text="*" Grid.Row="2" Grid.Column="3" Clicked="MathOperationButton_Clicked"/>
+
+            <xamarinformsapp:NumberButton Text="1" Grid.Row="3" Grid.Column="0" Clicked="NumberButton_Clicked"/>
+            <xamarinformsapp:NumberButton Text="2" Grid.Row="3" Grid.Column="1" Clicked="NumberButton_Clicked"/>
+            <xamarinformsapp:NumberButton Text="3" Grid.Row="3" Grid.Column="2" Clicked="NumberButton_Clicked"/>
+            <xamarinformsapp:MathOperationButton Text="-" Grid.Row="3" Grid.Column="3" Clicked="MathOperationButton_Clicked"/>
+
+            <xamarinformsapp:NumberButton Text="0" Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="3" Clicked="NumberButton_Clicked"/>
+            <xamarinformsapp:MathOperationButton Text="+" Grid.Row="4" Grid.Column="3" Clicked="MathOperationButton_Clicked"/>
+
+            <Button 
+                Text="CE"
+                BackgroundColor="Gray"
+                FontSize="36"
+                CornerRadius="0"
+                Grid.Row="5"
+                Grid.Column="0"
+                Grid.ColumnSpan="1"
+                Clicked="Setup"/>
+            <xamarinformsapp:MathOperationButton Text="=" Grid.Row="5" Grid.Column="1" Grid.ColumnSpan="3" Clicked="MathOperationButton_Clicked"/>
+
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

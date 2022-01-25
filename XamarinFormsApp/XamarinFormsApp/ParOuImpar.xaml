@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamarinFormsApp.ParOuImpar">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Determina se um número é par ou impar!"/>
+            <Entry x:Name="etrInput" Keyboard="Numeric" Placeholder="Informe um número" />
+            <Button x:Name="btnExecutar" Text="Executar" Clicked="btnExecutar_Clicked"/>
+            <Label x:Name="lblResult"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

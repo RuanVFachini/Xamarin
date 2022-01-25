@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamarinFormsApp.AbrirSiteExterno">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Abrir site externo"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+            <Image x:Name="imgSite1" Source="https://static.poder360.com.br/2020/08/nova-logomarca-do-mercado-livre-768x768.jpg">
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer 
+                        Tapped="TapGestureRecognizer_Tapped_MercadoLivre"
+                        NumberOfTapsRequired="2"/>
+                </Image.GestureRecognizers>
+            </Image>
+            <Image x:Name="imgSite2" Source="https://upload.wikimedia.org/wikipedia/commons/7/71/KaBuM%21_Logo2015.png">
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer 
+                        Tapped="TapGestureRecognizer_Tapped_Kabum"
+                        NumberOfTapsRequired="2"/>
+                </Image.GestureRecognizers>
+            </Image>
+            <Image x:Name="imgSite3" Source="https://conteudo.imguol.com.br/p/pp/logos/esporteclube/logo_osmellhres-grande.png?v=6.4">
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer 
+                        Tapped="TapGestureRecognizer_Tapped_Uol"
+                        NumberOfTapsRequired="2"/>
+                </Image.GestureRecognizers>
+            </Image>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

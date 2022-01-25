@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamarinFormsApp.AppIdioma.AppIdiomaMain"
+             Title="App Idiomas">
+    <ContentPage.Content>
+        <StackLayout>
+            <Image Source="logoapp"
+                   HorizontalOptions="FillAndExpand"
+                   VerticalOptions="FillAndExpand"/>
+            <Button Text="Cores"
+                    x:Name="btnCores"
+                    Clicked="BtnCores_Clicked"
+                    BackgroundColor="Bisque"
+                    Margin="10,5" />
+            <Button Text="Numeros"
+                    x:Name="btnNumeros"
+                    Clicked="BtnNumeros_Clicked"
+                    BackgroundColor="Orange"
+                    Margin="10,5" />
+            <Button Text="Familiares"
+                    x:Name="btnFamiliares"
+                    Clicked="BtnFamiliares_Clicked"
+                    BackgroundColor="BurlyWood"
+                    Margin="10,5" />
+            <Button Text="Sair"
+                    x:Name="btnSair"
+                    Clicked="BtnSair_Clicked"
+                    BackgroundColor="Red"
+                    Margin="10,5" />
+            <Image Source="logodfilitto" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

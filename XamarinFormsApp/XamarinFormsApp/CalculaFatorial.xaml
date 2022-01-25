@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamarinFormsApp.CalculaFatorial"
+             Title="Calcula o Fatorial de um número">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label
+                Text="Calcula o Fatorial de um número"
+                VerticalOptions="Start" 
+                HorizontalOptions="CenterAndExpand"
+                FontSize="Title"/>
+
+            <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+                <Entry x:Name="etrNumero" Keyboard="Numeric" Placeholder="Informe um número" HorizontalOptions="FillAndExpand"/>
+                <Button x:Name="btnExecutar" Text="Executar" Clicked="BtnExecutar_Clicked"/>
+            </StackLayout>
+
+            <Label x:Name="lblResult" HorizontalOptions="Center" Text="---" FontSize="Large"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

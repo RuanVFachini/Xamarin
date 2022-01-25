@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamarinFormsApp.CoffeeSale">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label
+                Text="Compra de café"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand"
+                FontSize="Title"/>
+            <Image Source="https://cdn-0.imagensemoldes.com.br/wp-content/uploads/2020/09/Desenho-de-Coffe-PNG-1017x1024.png"/>
+            <Label Text="Preço" HorizontalOptions="CenterAndExpand" VerticalOptions="Start"/>
+            <Label Text="R$ 5,00" HorizontalOptions="CenterAndExpand" VerticalOptions="Start"/>
+            <StackLayout
+                Padding="20,0"
+                VerticalOptions="Start" 
+                HorizontalOptions="FillAndExpand"
+                Orientation="Horizontal">
+                <Button Text="-" HorizontalOptions="FillAndExpand" FontSize="Large" Clicked="ButtonIncreaseDecrease_Clicked"/>
+                <Button Text="+" HorizontalOptions="FillAndExpand" FontSize="Large" Clicked="ButtonIncreaseDecrease_Clicked"/>
+            </StackLayout>
+            <StackLayout
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand">
+                <Label x:Name="lblQtd" Text="Quantidade: 0" HorizontalTextAlignment="Center" FontSize="Large"/>
+                <Label x:Name="lblResult" Text="Total (R$): 0" HorizontalTextAlignment="Center" FontSize="Large"/>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
